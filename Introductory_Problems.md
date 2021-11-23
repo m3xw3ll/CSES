@@ -56,6 +56,20 @@ print(2**n % (10**9+7))
 
 ````
 
+## [Trailing Zeros (1618)](https://cses.fi/problemset/task/1618/)
+````python
+# mathematical background: https://www.purplemath.com/modules/factzero.htm
+n = int(input())
+fact = 1
+cnt = 0
+
+while (n // 5**fact) != 0:
+    cnt += n // 5**fact
+    fact += 1
+
+print(cnt)
+````
+
 ## [Palindrome Reorder (1755)](https://cses.fi/problemset/task/1755)
 ````python
 n = str(input())
