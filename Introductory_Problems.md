@@ -49,7 +49,7 @@ for i in x:
 print(cnt)
 ```
 
-## [Spiral Number (1071)](https://cses.fi/problemset/task/1071/)
+## [Number Spiral (1071)](https://cses.fi/problemset/task/1071/)
 ````python
 t = int(input())
 
