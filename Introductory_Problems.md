@@ -49,6 +49,27 @@ for i in x:
 print(cnt)
 ```
 
+## [Spiral Number (1071)](https://cses.fi/problemset/task/1071/)
+````python
+t = int(input())
+
+for i in range(t):
+    y, x = map(int, input().split())
+
+    if x > y:
+        if x % 2 == 1:
+            print(x * x -y +1)
+        else:
+            x -= 1
+            print(x * x +y)
+    else:
+        if y % 2 == 0:
+            print(y * y -x +1)
+        else:
+            y -= 1
+            print(y * y + x)
+````
+
 ## [Bit Strings (1617)](https://cses.fi/problemset/task/1617)
 ````python
 n = int(input())
