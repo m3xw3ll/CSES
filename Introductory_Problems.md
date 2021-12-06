@@ -83,6 +83,16 @@ for i in range(t):
             print(y * y + x)
 ````
 
+## [Two Knights (1072)](https://cses.fi/problemset/task/1072/)
+````python
+n = int(input())
+
+for i in range(1,n+1,1):
+    possible_steps = (i**4 - i**2) / 2
+    possible_attacks = 2 * (2 * (i - 1) * (i - 2))
+    print(int(possible_steps - possible_attacks))
+````
+
 ## [Two Sets(1092)](https://cses.fi/problemset/task/1092/)
 ````python
 n = int(input())
